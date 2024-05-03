@@ -1,0 +1,94 @@
+/* mini reset */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0
+}
+h1,h2,h3,h4,h5,h6{
+  font-size:100%;
+  font-weight:normal
+}
+ul{
+  list-style:none
+}
+button,input,select{
+  margin:0
+}
+html{
+  box-sizing:border-box
+}
+*,*::before,*::after{
+  box-sizing:inherit
+}
+img,video{
+  height:auto;
+  max-width:100%
+}
+iframe{
+  border:0
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0
+}
+td,th{
+  padding:0
+}
+
+/* float 정렬 */
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+main {
+  width: 336px;
+  height: 168px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.img {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  float: left;
+  position: relative;
+}
+.img::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #4CFE88;
+  border: 2px solid white;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+.img.offline::after {
+  background: #DBDBDB;
+}
+
+/* flex 정렬 */
+@supports (display: flex) {
+  .img {
+    clear: both;
+  }
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .faces {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .femaleFaces {
+    order: 1;
+  }
+}
