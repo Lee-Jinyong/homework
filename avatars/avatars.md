@@ -7,9 +7,9 @@
 &nbsp;
 **참고 이미지**
 
-![Homework 1 Reference image 1](../readme_img/homework1_ref_img_01.png "Homework 1 Reference image 1")
+![Homework 1 Reference image 1](../readme_img/homework1_ref_img_01.png "Homework 1 Reference image 1")  
 float을 사용했을 때
-![Homework 1 Reference image 2](../readme_img/homework1_ref_img_02.png "Homework 1 Reference image 2")
+![Homework 1 Reference image 2](../readme_img/homework1_ref_img_02.png "Homework 1 Reference image 2")  
 flex를 사용했을 때
 
 &nbsp;
