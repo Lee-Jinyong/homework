@@ -1,1 +1,204 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+@import url(/reset.css);
+@import url(/base.css);
+
+/* 모바일 퍼스트 */
+body {
+  color: #181818;
+  font-weight: 600;
+  margin: 0;
+}
+
+header{
+  margin: 10rem 0 5rem 0;
+  text-align: center;
+  
+  .logo {
+    width: 230px;
+    inline-size: 230px;
+  }
+}
+
+fieldset{
+  display: flex;
+  flex-flow: column nowrap;
+  
+  .login-input-group {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.625rem;
+  }
+
+  .login-button{
+    --bg-color: #03cf5d;
+    --color: #fff;
+    
+    flex-grow: 1;
+    border: 0;
+    font-size: 1rem;
+    line-height: 2.8125rem;
+    background-color: var(--bg-color);
+    color: var(--color);
+    padding: 0;
+    margin: 1.25rem 1.25rem 0 1.25rem;
+  }
+}
+
+.form-input{
+  --bg-color: #fff;
+  --border-color: #dadada;
+  --focus-bg-color: #e9f0fd;
+  --focus-border-color: #03cf5d;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  label {
+    white-space: nowrap;
+  }
+
+  input{
+    flex-grow: 1;
+    background: var(--bg-color);
+    font-size: 0.875rem;
+    border: 1px solid var(--border-color);
+    padding: 0 1.25rem;
+    height: 2.8125rem;
+    block-size: 2.8125rem;
+    margin: 0 1.25rem;
+  }
+
+  input:focus {
+    outline: 0;
+    background: var(--focus-bg-color);
+    border: 1px solid var(--focus-border-color);
+  }
+}
+
+
+.login-option {
+  display: flow-root;
+  margin-top: 0.625rem;
+  padding: 0 1.25rem;
+
+  input {
+    appearance: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.save-login-info {
+  position: relative;
+  float: right;
+  line-height: 1.5rem;
+
+  input {
+    position: absolute;
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  label {
+    display: block;
+    background: url(/naver/icons/unchecked.svg) no-repeat 0 0 /24px 24px;
+    padding-left: 1.8125rem;
+  }
+
+  input:checked + label {
+    background-image: url(/naver/icons/checked.svg);
+  }
+
+  input:focus-visible {
+    border: 2px solid #24388d;
+  }
+}
+
+.ip-security {
+  display: none;
+}
+
+
+/* 데스크탑 스타일 */
+@media (min-width: 768px) {
+  .login {
+    align-items: center;
+  }
+
+  fieldset {
+    align-items: center;
+    
+    .login-button{
+      width: 500px;
+      margin-top: 1.25rem;
+    }
+  }
+  
+  .form-input{  
+    input{
+      width: 500px;
+    }
+  }
+  
+  .login-option {
+    width: 500px;
+    margin: 0.625rem auto;
+    padding: 0;
+  }
+  
+  .save-login-info {
+    float: left;
+  }
+  
+  .ip-security {
+    display: block;
+    position: relative;
+    float: right;
+    line-height: 1.5rem;
+
+    label {
+      margin-right: 2rem;
+    }
+
+    input {
+      position: absolute;
+      right: 0;
+      width: 2rem;
+      height: 1rem;
+      margin: 0;
+    }
+
+    input::before {
+        content: "ON";
+        color: #03cf5d;
+    }
+
+    input:checked {
+      &::before{
+        content: "OFF";
+        color: #bbb;
+      }
+    }
+
+    input:focus-visible {
+      &::before{
+        outline: 2px solid #24388d;
+      }
+    }
+
+    a {
+      margin: 0.5rem;
+    }
+
+    a:focus {
+      outline: none;
+    }
+    
+    a:focus-visible {
+      outline: 2px solid #24388d;
+    }
+  
+  }
+}
