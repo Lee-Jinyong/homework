@@ -103,12 +103,12 @@ fieldset{
 
   label {
     display: block;
-    background: url(/naver/icons/unchecked.svg) no-repeat 0 0 /24px 24px;
+    background: url(./icons/unchecked.svg) no-repeat 0 0 /24px 24px;
     padding-left: 1.8125rem;
   }
 
   input:checked + label {
-    background-image: url(/naver/icons/checked.svg);
+    background-image: url(./icons/checked.svg);
   }
 
   input:focus-visible {
