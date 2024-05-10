@@ -1,0 +1,89 @@
+:root {
+  --base: "SUIT Variable", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--base);
+}
+
+.avatar {
+  --size: 64px;
+
+  margin: 0;
+  position: relative;
+  inline-size: var(--size, 64px);
+  block-size: var(--size, 64px);
+
+  img {
+    inline-size: inherit; /* 또는 100% */
+    block-size: inherit; /* 또는 100% */
+    border-radius: 50%;
+  }
+
+  figcaption {
+    --size: 18px;
+
+    inline-size: var(--size, 18px);
+    block-size: var(--size, 18px);
+    background-color: #DBDBDB;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* inline-end: 0;
+    block-end: 0; */
+  }
+  
+  &.is-online {
+    figcaption {
+      background-color: #4CFE88;
+    }
+  }
+}
+
+/* member layout */
+.member {
+  --avata-size: 64px;
+  --avata-count: 4;
+  --avata-spacing: 10px;
+  --container-size: calc((var(--avata-size) * var(--avata-count)) + (var(--avata-spacing) * (var(--avata-count) * 2)));
+
+  inline-size: var(--container-size);
+  margin: 50px auto;
+  /* border: 1px solid red; */
+  
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0;
+    display: flow-root;
+  }
+
+  li {
+    margin: 10px;
+    float: left;
+  }
+}
+
+@supports (display: flex) {
+  .member {
+    
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    li {
+      float: none;
+    }
+
+    li:nth-child(-n + 4) {
+      order: 1;
+    }
+  }
+}
