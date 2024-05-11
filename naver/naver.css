@@ -1,5 +1,55 @@
-@import url(/reset.css);
-@import url(/base.css);
+/* 스타일 초기화 */
+h1, h2, h3, h4, h5, h6{
+  font: inherit;
+  font-size: 1em;
+  margin: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style: none;
+  padding-left: 0;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0
+}
+
+input, textarea, select, option, button{
+  font: inherit;
+}
+
+/* 기본 스타일 */
+:root{
+  --base-font-family: "Pretendard Variable", gothic; 
+}
+
+body *, body *::before, body *::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--base-font-family);
+  line-height: 1.15;
+}
+
+*:focus {
+  outline: 0;
+}
+
+*:focus-visible {
+  outline: 2px solid green;
+}
+
+
 
 /* 모바일 퍼스트 */
 body {
@@ -98,7 +148,9 @@ fieldset{
     position: absolute;
     margin: 0;
     width: 1.5rem;
+    inline-size: 1.5rem;
     height: 1.5rem;
+    block-size: 1.5rem;
   }
 
   label {
@@ -132,6 +184,7 @@ fieldset{
     
     .login-button{
       width: 500px;
+      inline-size: 500px;
       margin-top: 1.25rem;
     }
   }
@@ -139,11 +192,13 @@ fieldset{
   .form-input{  
     input{
       width: 500px;
+      inline-size: 500px;
     }
   }
   
   .login-option {
     width: 500px;
+    inline-size: 500px;
     margin: 0.625rem auto;
     padding: 0;
   }
