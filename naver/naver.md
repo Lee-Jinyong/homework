@@ -9,8 +9,7 @@
 
 ![Homework 2 Reference image 1](../readme_img/homework2_ref_img_01.PNG "Homework 2 Reference image 1")  
 **모바일 퍼스트 레이아웃 디자인**  
-&nbsp;
-&nbsp;
+
 ![Homework 2 Reference image 2](../readme_img/homework2_ref_img_01.PNG "Homework 2 Reference image 2")  
 **데스크탑 스타일 레이아웃 디자인**
 
