@@ -1,5 +1,7 @@
 @import url(theme.css);
 
+/* 메인 CSS 파일에 병합 완료 */
+
 /* 카드 컨테이너 및 배경 이미지 속성 */
 .card-container {
   width: 100%;
