@@ -3,6 +3,7 @@
 @import url(base.css);
 @import url(card-component.css);
 
+/* 그리드 레이아웃 */
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -14,7 +15,6 @@ main {
   }
 }
 
-/* 그리드 레이아웃 */
 .lg-cols-1 {
   grid-column: span 1;
 }
@@ -27,7 +27,7 @@ main {
   }
 }
 
-/* 카드 레이아웃 */
+/* 카드 컨테이너 레이아웃 */
 .card-box {
   width: 100%;
   min-width: 250px;
@@ -36,6 +36,8 @@ main {
 }
 
 /* 제품 배경이미지 지정 */
+
+/* 아이패드 프로 */
 .ipad-pro {
   background-image: image-set(url(./../products/ipad_pro.jpeg) 1x, url(./../products/ipad_pro_2x.jpeg) 2x);
 
@@ -44,6 +46,7 @@ main {
   }
 }
 
+/* 아이패드 에어 */
 .ipad-air {
   background-image: image-set(url(./../products/ipad_air.jpeg) 1x, url(./../products/ipad_air_2x.jpeg) 2x);
 
@@ -52,6 +55,7 @@ main {
   }
 }
 
+/* 아이폰 15 프로 */
 .iphone-15-pro {
   background-image: image-set(url(./../products/iphone15_pro.jpeg) 1x, url(./../products/iphone15_pro_2x.jpeg) 2x);
 
@@ -60,6 +64,7 @@ main {
   }
 }
 
+/* 아이폰 15 */
 .iphone-15 {
   background-image: image-set(url(./../products/iphone15.jpeg) 1x, url(./../products/iphone15_2x.jpeg) 2x);
 
@@ -68,6 +73,7 @@ main {
   }
 }
 
+/* 애플 워치 */
 .a-watch {
   background-image: image-set(url(./../products/apple_watch.jpeg) 1x, url(./../products/apple_watch_2x.jpeg) 2x);
 
@@ -76,6 +82,7 @@ main {
   }
 }
 
+/* 맥북 에어 */
 .macbook-air {
   background-image: image-set(url(./../products/macbook_air.jpeg) 1x, url(./../products/macbook_air_2x.jpeg) 2x);
 
@@ -84,6 +91,7 @@ main {
   }
 }
 
+/* 에어팟 프로 */
 .airpods-pro {
   background-image: image-set(url(./../products/airpods_pro.jpeg) 1x, url(./../products/airpods_pro_2x.jpeg) 2x);
 }
