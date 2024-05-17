@@ -5,7 +5,7 @@
 - 주 요구사항: float을 사용한 레이아웃 구성, flex를 지원하는 브라우저 환경 레이아웃 추가 구성
 
 &nbsp;  
-### **참고 이미지**
+### **결과 이미지**
 
 ![Homework 1 Reference image 1](../readme_img/homework1_ref_img_01.png "Homework 1 Reference image 1")  
 float을 사용했을 때  

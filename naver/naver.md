@@ -5,7 +5,7 @@
 - 주 요구사항: 미디어 쿼리를 활용한 반응형 레이아웃 구성, 폼 서식을 키보드로 접근 가능하도록 구현
 
 &nbsp;  
-### **참고 이미지**
+### **결과 이미지**
 
 ![Homework 2 Reference image 1](../readme_img/homework2_ref_img_01.PNG "Homework 2 Reference image 1")  
 **모바일 퍼스트 레이아웃 디자인**  
