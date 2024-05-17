@@ -10,3 +10,8 @@
 ### 과제 2
 ##### NAVER 로그인 페이지 만들기
 [HOMEWORK 2 README](naver/naver.md "HOMEWORK 2 README.md") (updated 2024.05.11)
+
+&nbsp;  
+### 과제 3
+##### Apple 제품 페이지 만들기
+[HOMEWORK 3 README](apple/apple.md "HOMEWORK 3 README.md") (updated 2024.05.18)
